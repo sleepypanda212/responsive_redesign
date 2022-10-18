@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:rgba(239, 235, 210, 0.441);"></body>
+
+<head>
+  <title>CS1300 HTML/CSS/JS Studio</title>
+  <script src="app.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    h1 {
+      color: rgb(154, 187, 143);
+      font-style: oblique;
+    }
+    p {
+      margin-bottom: 0;
+      font-style: italic;
+      font-size: 100%;
+    }
+    body {
+      color: rgb(103, 113, 97);
+      font-size: 20px;
+      font-style: italic;
+      padding: 0;
+      margin-top: 0;
+    }
+    div {
+      font-size: 70%;
+      font-style: normal;
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    a {
+      font-size: 70%;
+    }
+    a:hover {
+      font-size: 70%;
+      color: rgb(149, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cs1300-gallery">
+    <h1>Responsive Redesign</h1>
+    <p>Why Metro Nail?</p>
+    <div>
+      Metro Nails is my favorite nail salon in Providence; however, when I recommended this place to my friend, she was hesitant to book an appointment, because the website was difficult to navigate and the website did not look reliable, so I decided to investigate why it does not look reliable and how to improve the website. 
+    </div>
+
+    <p>Their Website</p>
+    <div class="gallery-item-container">
+      <img class="gallery-item" src="./assets/old_ss.png" alt="Gas stove">
+    </div>
+    <a href="https://metronails.webs.com/">Check out their website!</a>
+
+    <p>Problems in Usability</p>
+    <div>
+      The website is straightforward, as the main page does not contain many features: instructions and general information, reviews, menu, directions, and events. However, there are many confusing interactions that decrease the usability (unintuitive functions), learnability (difficult to learn because of so many unnecessary features),  and memorability (hard to remember how to use the website because of the confusing layout). 
+<br>&emsp;1.	Repetitive: some adjacent interactions are identical to each other
+<br>&emsp;&emsp; a.	Example: the “yelp” and “Reviews on Yelp” buttons lead to the same link
+<br>&emsp;2.	Inconsistent: the fonts, colors, size, and alignments are not uniform 
+<br>&emsp;3.	Misleading: some texts are underlined, and the red fonts that are used for hyperlinks are also used for other random texts
+<br>&emsp;&emsp;a.	Seems like they are also hyperlinks
+<br>&emsp;4.	Unmemorable: no organization (no sections whatsoever) and irrelevant images 
+<br>&emsp;5.	Dysfunctional: many of the hyperlinks are connected to an expired/removed link
+<br>&emsp;6.	Inefficient: many unnecessary buttons and texts
+<br>&emsp;&emsp;a.	Example 1: the button on the bottom to “Create a Free Website”
+<br>&emsp;&emsp;b.	Example 2: title “METRONAILS 401-490-0101” seems unnecessary (button redirects to the main page, which the user is already in) 
+<br>&emsp;&emsp;c.	Example 3: puts the phone number and name of the nail salon twice
+<br>&emsp;7.	Unreadable and unlearnable: unintuitive interactions and messy layouts
+    </div>
+
+    <p>Accessibility</p>
+    <div>
+    WebAIM WAVE detected a total of 8 different types of errors and alerts:
+    <br>&emsp;1.	Missing alternative text
+    <br>&emsp;2.	Language missing
+    <br>&emsp;3.	Empty headings
+    <br>&emsp;4.	Contrast errors
+    <br>&emsp;5.	Justified text
+    <br>&emsp;6.	No page regions
+    <br>&emsp;7.	Redundant link
+    <br>&emsp;8.	Underlined text
+    <br>I agree with all of the errors and alerts. No images, including spacer images, had alternative texts, making the website unreadable when the images are unavailable. The language of the page is not identified, and there are multiple empty headings that makes the website messy and confuse the users. The text and background color have similar shades and have low contrast, which can be harder to read for some users. There are no regions defined, not even for the main content, which contributes to the messy layout. The adjacent links that direct the users to the same location make the website inefficient, and the underlined texts mislead the users that they are linked texts. 
+    </div>
+
+  <p>Low-fidelity Wireframing</p>
+  <div class="lofi-item-container">
+    <img class="lofi-item" src="./assets/desktop.jpg" alt="Gas stove">
+    <img class="lofi-item" src="./assets/tablet.jpg" alt="Gas stove">
+  </div>
+  
+  <p>Visual Design Style Guide</p>
+  <div class="gallery-item-container">
+    <img class="gallery-item" src="./assets/vds.png" alt="Gas stove">
+  </div>
+
+  <p>High-fidelity Prototyping</p>
+  <div class="gallery-item-container">
+    <img class="gallery-item" src="./assets/hifi1.jpg" alt="Gas stove">
+  </div>
+  <div class="hifi-item-container">
+    <img class="hifi-item1" src="./assets/hifi2.jpg" alt="Gas stove">
+    <img class="hifi-item2" src="./assets/hifi3.jpg" alt="Gas stove">
+  </div>
+  <div class="lofi-item-container">
+    <img class="lofi-item" src="./assets/hifi4.jpg" alt="Gas stove">
+    <img class="lofi-item" src="./assets/hifi5.jpg" alt="Gas stove">
+  </div>
+
+  <p>Redesigned Website</p>
+  <div class="gallery-item-container">
+    <img class="gallery-item" src="./assets/new_web.png" alt="Gas stove">
+  </div>
+  <a href="https://sleepypanda212.github.io/hw2/">Check out the website makeover!</a>
+</body>
+
+</html>
