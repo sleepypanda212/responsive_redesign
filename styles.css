@@ -47,3 +47,52 @@
   gap: 10rem;
   width: 30.9%;
 }
+
+.slider {
+  width: 60%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: rgb(74, 0, 0);
+  border-radius: 5px;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 50vw;
+  background: transparent;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 5rem;
+  height: 0;
+  font-size: 15px;
+  color: rgb(57, 106, 67);
+  text-decoration: none;
+  align-items: center;
+  margin: 0 0 0;
+  position: relative;
+}
